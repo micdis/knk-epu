@@ -8,6 +8,10 @@
 # install dependencies
 npm install
 
+# create local database with credentials found in config.js
+consider running ALTER USER 'username'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+if AUTH-error occurs
+
 # serve with hot reload at localhost:8080
 npm run dev
 
@@ -18,4 +22,3 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
